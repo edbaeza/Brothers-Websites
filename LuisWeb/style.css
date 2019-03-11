@@ -1,0 +1,37 @@
+  body {
+    font-family: sans-serif;
+    
+  }
+  
+  nav {
+    float: right;
+  }
+
+
+  
+
+  /* light theme */
+  .light_theme {
+    background-color: rgb(255,255,255);
+    color: rgb(12,12,12);
+  }
+  
+  /* dark theme */
+  .dark_theme {
+    background-color: rgb(38,38,38);
+    color: rgb(242,242,242);
+  }
+  
+  .light_theme button {
+    background-color: rgb(38,38,38);
+    color: rgb(242,242,242);
+  }
+
+  .dark_theme button {
+    background-color: rgb(255,255,255);
+    color: rgb(12,12,12);
+  }
+  
+
+  
+  
