@@ -20,6 +20,17 @@
     
     </nav>
     <body id="mainbody" class="light_theme">
+        <script>
+            /* this is faster than onload 
+                since only waits for the DOM to be ready
+                not for all images etc to load.
+                runs when page initializes
+            */
+            (function() {
+                // the DOM will be available here
+                init();
+            })();
+        </script>
       
       <div class="maintext">
         
@@ -43,8 +54,6 @@
             <p><b>Address:</b> Department of Mathematics <br>Brown University <br> Box 1917<br>151 Thayer Street<br>Providence, RI 02912</p>
             
         </div>
-
       </div>
-
     </body>
 </html>
