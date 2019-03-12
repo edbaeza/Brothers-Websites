@@ -15,6 +15,15 @@
     letter-spacing: 2px;
   }
 
+  a{
+    color: rgb(55, 70, 211);
+    opacity: 0.7;
+  }
+
+  a:hover{
+    opacity: 1.0;
+  }
+
   nav{
      
   }
