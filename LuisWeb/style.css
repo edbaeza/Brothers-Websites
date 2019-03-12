@@ -2,13 +2,54 @@
     font-family: sans-serif;
     
   }
+
+  h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
   
-  nav {
-    float: right;
+  nav{
+    margin-top: 0px;
+  }
+
+  nav a{
+    text-decoration: none;
+  }
+
+  .me{
+    margin-right: auto;
+  }
+
+  /* responsive navbar using flexbox*/
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+
+  .container > div {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  
+  @media all and (max-width: 600px) {
+    .container {
+      flex-wrap: wrap;
+    }
+    
+    .container > div {
+      flex: 1 1 50%;
+    }
+  }
+
+  @media all and (max-width: 400px) {
+    .container > div {
+      flex: 1 1 100%;
+    }
   }
 
 
-  
+
 
   /* light theme */
   .light_theme {
@@ -22,13 +63,47 @@
     color: rgb(242,242,242);
   }
   
-  .light_theme button {
+  /* specific light and dark theme for tags*/
+
+  .light_theme button{
+    background-color: rgb(38,38,38);
+    color: rgb(242,242,242);
+    border: 2px solid rgb(255,255,255);
+  }
+
+
+  .dark_theme button{
+    background-color: rgb(255,255,255);
+    color: rgb(12,12,12);
+    border: 2px solid rgb(38,38,38);;
+  }
+
+  .light_theme button:hover{
+    background-color: rgb(255,255,255);
+    color: rgb(12,12,12);
+    transition-duration: 0.5s;
+  }
+  .dark_theme button:hover{
+    background-color: rgb(38,38,38);
+    color: rgb(242,242,242);
+    transition-duration: 0.5s;
+  }
+
+
+
+  .light_theme nav {
     background-color: rgb(38,38,38);
     color: rgb(242,242,242);
   }
-
-  .dark_theme button {
+  .dark_theme nav {
     background-color: rgb(255,255,255);
+    color: rgb(12,12,12);
+  }
+  
+  .light_theme nav a {
+    color: rgb(242,242,242);
+  }
+  .dark_theme nav a {
     color: rgb(12,12,12);
   }
   
