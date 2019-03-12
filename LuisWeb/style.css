@@ -5,10 +5,13 @@
     but causing some issues when loading/refresh
     */
     font-family: 'Lato',sans-serif;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   nav{
-    margin-top: 0px; 
+     
   }
 
   nav a{
