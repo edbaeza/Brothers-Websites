@@ -37,4 +37,12 @@ function changeTheme(){
         localStorage.setItem("theme", "light_theme");
     }
 
+    /* Can do: 
+        var element = document.getElementById("mainbody")
+        element.classList.toggle("mystyle")
+
+        without storing the theme in local storage
+        (would go back to light_theme after reloading page)
+    */
+
 }

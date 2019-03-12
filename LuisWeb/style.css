@@ -1,29 +1,41 @@
+  /* tags */
   body {
-    font-family: sans-serif;
-    
+    /* want to use:
+    font-family: 'Lato', sans-serif; 
+    but causing some issues when loading/refresh
+    */
+    font-family: 'Lato',sans-serif;
   }
 
-  h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  
   nav{
-    margin-top: 0px;
+    margin-top: 0px; 
   }
 
   nav a{
     text-decoration: none;
   }
 
+
+  /* custom classes*/
+
   .me{
     margin-right: auto;
   }
+
+  .maintext{
+    text-align: center;
+    margin: 50px;
+  }
+
+  .contact{
+    margin: 50px;
+  }
+
 
   /* responsive navbar using flexbox*/
   .container {
     display: flex;
     justify-content: flex-end;
-    
   }
 
   .container > div {
@@ -90,7 +102,7 @@
   }
 
 
-
+  
   .light_theme nav {
     background-color: rgb(38,38,38);
     color: rgb(242,242,242);
